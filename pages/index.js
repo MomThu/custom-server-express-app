@@ -1,18 +1,19 @@
 import Link from 'next/link'
+import { Button } from 'antd'
 
 export default function Home() {
   return (
-    <ul>
-      <li>
-        <Link href="/b" as="/a">
-          <a>a</a>
+    <>
+      <div>
+        <Link href="/login">
+          <Button>Login</Button>
         </Link>
-      </li>
-      <li>
-        <Link href="/a" as="/b">
-          <a>b</a>
+      </div>
+      <div>
+        <Link href="/detail">
+          <Button>Go to app</Button>
         </Link>
-      </li>
-    </ul>
+      </div>
+    </>
   )
 }
